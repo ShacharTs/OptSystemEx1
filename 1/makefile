@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -g -std=c++17
+CXXFLAGS = -Wall  -std=c++17 -g
 
 TARGET = main
 SRC = Ex1.cpp

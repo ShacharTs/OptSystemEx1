@@ -40,10 +40,6 @@ int main() {
          break;
      }
 
-//    overflow();
-//    div_zero();
-//    access_wrong_memory();
-
 
 
 
