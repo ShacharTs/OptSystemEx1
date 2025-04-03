@@ -1,0 +1,3 @@
+/home/shachar123/Desktop/OptSystemEx1/5/cmake-build-debug/CMakeFiles/main.dir
+/home/shachar123/Desktop/OptSystemEx1/5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shachar123/Desktop/OptSystemEx1/5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
