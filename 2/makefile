@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall  -std=c++17 -g
 
-TARGET = main
+TARGET = mandelbrot
 SRC = Ex2.cpp
 OBJ = $(SRC:.cpp=.o)
 

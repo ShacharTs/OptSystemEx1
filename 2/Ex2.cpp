@@ -1,17 +1,17 @@
 #include <complex>
 #include <iostream>
+
 #include <vector>
 
 using namespace std;
 
 
-void mandelbrot(double real, double imag) {
-        int limits = 10000;
+void mandelbrot(double real, double imag, int N) {
         double zReal = 0.0;
         double zImag = 0.0;
 
 
-        for (int i = 0; i < limits; i++) {
+        for (int i = 0; i < N; i++) {
                 const double r2 = zReal * zReal;
                 const double i2 = zImag * zImag;
 
@@ -32,21 +32,19 @@ void mandelbrot(double real, double imag) {
 
 int main(int argc, char* argv[]){
 
-        if (argc != 3) {
-                cout << "Usage: " << argv[0] << " <real> <imaginary>" << endl;
+        if (argc < 3) {
+                cout << "Usage: " << argv[0] << " <real> <imaginary> Optional: <N>" << endl;
                 return 1;
         }
 
         const double real = stod(argv[1]);
         const double imag = stod(argv[2]);
-        mandelbrot(real, imag);
+        int N = 10000;
+        if (argc > 3) {
+            N = stoi(argv[3]);
+        }
+        mandelbrot(real, imag,N);
 
-
-
-
-
-
-
-
+        return 0;
 
 }
